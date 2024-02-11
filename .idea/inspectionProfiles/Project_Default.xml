@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="numbers.numbgame.screen" />
+          <option value="redalert.redalert.screen" />
+          <option value="redalert.ui.screen" />
+          <option value="redalert.redalert.Actor" />
+          <option value="redalert.redalert.animate" />
+          <option value="redalert.stars.animate" />
+          <option value="breakout.src.state.start.g" />
+          <option value="breakout.src.state.start.KEY_PRESSED" />
+          <option value="breakout.src.state.start.pg" />
+          <option value="breakout.src.state.start.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

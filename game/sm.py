@@ -1,3 +1,4 @@
+import pygame as pg
 from game.state.base import BaseState
 
 
@@ -10,8 +11,8 @@ class StateMachine:
     def update(self, dt):
         self.current.update(dt)
 
-    def draw(self):
-        self.current.draw()
+    def draw(self) -> list:
+        return self.current.draw()
 
     def change(self, state, param=None):
         assert self.states[state]

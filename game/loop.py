@@ -24,13 +24,19 @@ def update(dt):
 
 def draw():
     SCREEN.blit(IMG['background'], (0, 0))
-    SM.draw()
-    pg.display.update()
+    rect_list = SM.draw()
+    """
+    if rect_list is None:
+        pg.display.flip()
+    else:
+        pg.display.update(rect_list)
+    """
+    pg.display.flip()
 
 
 def run():
     init()
-    while True:
+    while 1:
         update(CLOCK.get_time() / 1000)
         draw()
         CLOCK.tick(FPS)

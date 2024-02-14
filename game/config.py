@@ -11,7 +11,7 @@ SCREEN = pg.display.set_mode(SIZE)
 
 IMG = {
     'background': pg.transform.scale(pg.image.load('img/background.png').convert(), (WIDTH+1, HEIGHT+3)),
-    'main': pg.image.load('img/breakout.png').convert_alpha()
+    'main': pg.image.load('img/breakout.png').convert()
 }
 
 FONT = {
@@ -34,5 +34,6 @@ KEY_DOWN = {}
 SM = game.sm.StateMachine()
 
 PADDLE = game.util.paddles(IMG['main'])
+BALL = game.util.balls(IMG['main'])
 
-PADDLE_SPEED = 250
+PADDLE_SPEED = 350

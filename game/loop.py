@@ -24,13 +24,7 @@ def update(dt):
 
 def draw():
     SCREEN.blit(IMG['background'], (0, 0))
-    rect_list = SM.draw()
-    """
-    if rect_list is None:
-        pg.display.flip()
-    else:
-        pg.display.update(rect_list)
-    """
+    SM.draw()
     pg.display.flip()
 
 

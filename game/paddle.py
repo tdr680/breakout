@@ -20,10 +20,5 @@ class Paddle:
         self.x = self.x + self.dx * dt
         self.x = max(0, min(self.x, WIDTH-self.surface.get_rect().width))
 
-    def draw(self) -> pg.Rect:
-        return SCREEN.blit(self.surface, (self.x, self.y))
-
-    def set_surface(self, color, size):
-        self.color = color
-        self.size = size
-        self.surface = PADDLE[self.color][self.size]
+    def draw(self):
+        SCREEN.blit(self.surface, (self.x, self.y))

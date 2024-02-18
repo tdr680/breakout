@@ -9,5 +9,5 @@ class BaseState:
     def update(self, dt):
         pass
 
-    def draw(self) -> list:
+    def draw(self):
         pass

@@ -23,7 +23,10 @@ FONT = {
 AUDIO = {
     'paddle-hit': pg.mixer.Sound("audio/paddle_hit.wav"),
     'confirm': pg.mixer.Sound("audio/confirm.wav"),
-    'pause': pg.mixer.Sound("audio/pause.wav")
+    'pause': pg.mixer.Sound("audio/pause.wav"),
+    'wall_hit': pg.mixer.Sound("audio/wall_hit.wav"),
+    'brick-hit-1': pg.mixer.Sound("audio/brick-hit-1.wav"),
+    'brick-hit-2': pg.mixer.Sound("audio/brick-hit-2.wav")
 }
 
 COLOR_WHITE = (255, 255, 255)
@@ -35,5 +38,6 @@ SM = game.sm.StateMachine()
 
 PADDLE = game.util.paddles(IMG['main'])
 BALL = game.util.balls(IMG['main'])
+BRICK = game.util.bricks(IMG['main'])
 
 PADDLE_SPEED = 350
